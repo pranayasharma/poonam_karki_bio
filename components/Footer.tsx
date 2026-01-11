@@ -10,9 +10,9 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Poonam Karki</h3>
             <p className="text-gray-300 mb-4">
-              Soil Health Research Specialist at Lincoln University, focusing on
-              microbial ecology and sustainable agricultural solutions for
-              small- and mid-scale farmers.
+              Soil Technician at Lincoln University, focusing on microbial
+              ecology and sustainable agricultural solutions for small- and
+              mid-scale farmers.
             </p>
             <div className="flex space-x-4">
               <a

@@ -145,9 +145,9 @@ export default function Research() {
               Current Research Projects
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Working as a Soil Health Research Specialist in Dr. Hurisso's lab
-              at Lincoln University, focusing on microbial ecology and carbon
-              and nitrogen cycling dynamics in organic agricultural systems
+              Working as a Soil Technician in Dr. Hurisso's lab at Lincoln
+              University, focusing on microbial ecology and carbon and nitrogen
+              cycling dynamics in organic agricultural systems
             </p>
           </div>
 

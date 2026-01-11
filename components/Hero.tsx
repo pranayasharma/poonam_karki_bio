@@ -38,7 +38,7 @@ export default function Hero() {
                 Poonam Karki
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-emerald-600 font-semibold">
-                Soil Health Research Specialist
+                Soil Technician
               </p>
               <p className="text-lg mb-2 text-gray-700 italic font-medium">
                 "Building Healthy Soils, One Study at a Time"
@@ -145,9 +145,8 @@ export default function Hero() {
                     Current Position
                   </h4>
                   <p className="text-sm text-gray-700">
-                    Soil Health Research Specialist at Lincoln University,
-                    working in Dr. Hurisso's lab focusing on organic
-                    agricultural systems
+                    Soil Technician at Lincoln University, working in Dr.
+                    Hurisso's lab focusing on organic agricultural systems
                   </p>
                 </div>
 

@@ -17,8 +17,7 @@ const researchHighlights = [
     title: "Organic Transition Project",
     description:
       "Developing sustainable cover crop-cash crop companion production methods to enhance soil health and crowd out weeds. Addressing the $50 billion U.S. organic agriculture industry's greatest challenge - weed management without tillage-induced soil degradation. Working to improve crop yields and profitability for small- and mid-sized vegetable farms across Missouri and the Midwest.",
-    impact:
-      "USDA-NIFA funded project supporting 14,000+ organic farms",
+    impact: "USDA-NIFA funded project supporting 14,000+ organic farms",
   },
   {
     image: "/image/image_2.JPG",
@@ -33,7 +32,8 @@ const researchHighlights = [
     title: "Microbial Ecology & Biogeochemical Cycling",
     description:
       "Investigating the immense potential of soil microorganisms in biogeochemical cycles. Focused on carbon and nitrogen cycling dynamics in organic agricultural systems, exploring how microbial communities drive ecosystem sustainability and agricultural productivity.",
-    impact: "Advancing understanding of soil-microbe interactions for sustainable agriculture",
+    impact:
+      "Advancing understanding of soil-microbe interactions for sustainable agriculture",
   },
 ];
 
@@ -80,13 +80,30 @@ export default function About() {
                   Research Journey & Passion
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  My strong desire to study soil biogeochemistry is rooted in the immense potential and unexplored territory within this field. The pivotal moment that ignited my interest dates to my undergraduate years when I discovered that <strong>a single teaspoon of soil contains more microorganisms than the entire global human population</strong>.
+                  My strong desire to study soil biogeochemistry is rooted in
+                  the immense potential and unexplored territory within this
+                  field. The pivotal moment that ignited my interest dates to my
+                  undergraduate years when I discovered that{" "}
+                  <strong>
+                    a single teaspoon of soil contains more microorganisms than
+                    the entire global human population
+                  </strong>
+                  .
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  This astonishing fact initially struck me as a potential typographical error, compelling me to read it twice in disbelief. Nonetheless, it had a lasting effect on me, igniting my interest in this field and motivating me to embark on a journey of research into biogeochemical cycling.
+                  This astonishing fact initially struck me as a potential
+                  typographical error, compelling me to read it twice in
+                  disbelief. Nonetheless, it had a lasting effect on me,
+                  igniting my interest in this field and motivating me to embark
+                  on a journey of research into biogeochemical cycling.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Currently working as a <strong>Soil Health Research Specialist in Dr. Hurisso's lab at Lincoln University</strong>, I focus on microbial ecology and carbon and nitrogen cycling dynamics in organic agricultural systems.
+                  Currently working as a{" "}
+                  <strong>
+                    Soil Technician in Dr. Hurisso's lab at Lincoln University
+                  </strong>
+                  , I focus on microbial ecology and carbon and nitrogen cycling
+                  dynamics in organic agricultural systems.
                 </p>
               </div>
 
