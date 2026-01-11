@@ -85,7 +85,7 @@ npm start
 5. **Research**: Publications and active projects
 6. **Conferences**: Speaking engagements and presentations
 7. **Data Visualization**: Interactive research metrics
-8. **Contact**: Contact form and information
+8. **Contact**: Contact form and informations
 
 ## Performance Features
 
