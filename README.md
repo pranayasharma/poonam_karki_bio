@@ -93,7 +93,6 @@ npm start
 - Lazy loading for components
 - Smooth scroll animations
 - Mobile-first responsive design
-- SEO-optimized metadata
 
 ## License
 
