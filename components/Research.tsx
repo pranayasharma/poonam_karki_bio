@@ -369,80 +369,111 @@ export default function Research() {
             <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl">
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  During my master's research, I focused on the physiological
-                  and metabolic techniques used to measure soil biological
-                  health indicators. For decades, soil organic carbon has been
-                  considered the "currency of soil health," and while widely
-                  studied, it often responds too slowly, sometimes requiring
-                  decades to reflect changes in soil and crop management.
+                  During my master's program, I worked extensively with
+                  physiological and metabolic soil health indicators, which
+                  provided foundational insight into how soil organisms respond
+                  to management practices. Although soil organic carbon has long
+                  been viewed as a primary indicator of soil health, its slow
+                  response to management changes limits its usefulness for
+                  timely decision-making, motivating my focus on biologically
+                  active pools of soil organic matter such as permanganate
+                  oxidizable carbon (POXC), mineralizable carbon (Cmin-24),
+                  potentially mineralizable nitrogen (PMN), and soil enzymes
+                  that respond rapidly to shifts in soil conditions.
                 </p>
 
                 <p>
-                  Today, the focus has shifted toward the biologically active
-                  pools of soil organic matter (SOM), such as permanganate
-                  oxidizable carbon (POXC) and mineralizable carbon (Cmin-24).
-                  These measures are faster, more affordable, and more sensitive
-                  to management practices, offering deeper insights into soil
-                  carbon availability and crop performance. For example:
+                  Through this work, I developed a strong appreciation for the
+                  central role of soil microorganisms in nutrient turnover,
+                  organic matter decomposition, and soil resilience; for
+                  example, POXC revealed carbon availability for microbial use,
+                  while Cmin-24 reflected microbial respiration and activity.
+                  Together, these measurements strengthened my understanding of
+                  microbial contributions to soil function while also
+                  highlighting the need for approaches that better capture
+                  microbial complexity and functional roles.
                 </p>
-
-                <div className="bg-blue-50 rounded-lg p-6 ml-6">
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>
-                        <strong>POXC</strong> indicates how much food is
-                        available for soil microorganisms.
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>
-                        <strong>Cmin-24</strong> reveals how active those
-                        microorganisms are in the soil.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
 
                 <p className="font-semibold text-blue-700">
-                  After three years working with labile carbon and nitrogen
-                  indicators, I have come to understand that soil microorganisms
-                  are central to most of the answers I seek.
+                  Looking ahead, I am interested in integrating microbial
+                  community data and functional ecological approaches with
+                  established soil health indicators.
                 </p>
 
                 <p>
-                  In the future, I plan to move toward molecular and functional
-                  techniques that capture the complexity of the soil microbiome,
-                  which holds immense potential for understanding soil health:
+                  My interest lies in using targeted molecular and biochemical
+                  tools such as key functional gene markers, enzyme activities,
+                  and microbial biomass metrics that can complement physical and
+                  chemical soil measurements. These approaches can help identify
+                  the microbial processes most responsible for carbon
+                  stabilization, nitrogen mineralization, and soil nutrient
+                  cycling, while remaining relatively accessible for applied
+                  agricultural research.
                 </p>
 
-                <div className="bg-purple-50 rounded-lg p-6 ml-6">
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>
-                        <strong>Metagenomics</strong> can produce a detailed
-                        taxonomical profile of soil communities.
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>
-                        <strong>Metatranscriptomics</strong> can provide a
-                        functional profile, revealing which microbial processes
-                        are active.
-                      </span>
-                    </li>
-                  </ul>
+                <div className="bg-red-50 rounded-lg p-6">
+                  <h4 className="font-semibold text-red-800 mb-3">
+                    PFAS Research Interest
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    Over the past four years of working in soil science, I have
+                    come to appreciate how closely soil systems are connected to
+                    human activities and consumer products and how critical soil
+                    health is for environmental and human wellbeing. For
+                    example, organic farmers in Missouri commonly use compost,
+                    animal, and poultry manure to improve the fertility of the
+                    soil.
+                  </p>
+                  <p className="text-gray-700 mb-3">
+                    However, recent studies in the United States have shown that
+                    various types of non-biosolid organic composts, including
+                    food, yard, manure, and mushroom-based materials, contain
+                    measurable concentrations of PFAS with total concentrations
+                    of 17 PFAS ranging from 28.7 to 75.9 ng/g.
+                  </p>
+                  <p className="text-gray-700">
+                    Because I work closely with organic farmers and study how
+                    management practices affect soil health and microbial
+                    community structure, this has led me to question how PFAS
+                    present in these amendments may influence soil microbial
+                    processes, plant uptake, and ultimately food systems. I am
+                    particularly interested in understanding PFAS fate and
+                    transport in agricultural soils, their interactions with
+                    soil organic matter and microbial communities, and
+                    strategies to limit PFAS distribution in soil and sediments.
+                  </p>
                 </div>
 
                 <p>
-                  These approaches can be correlated with physical, chemical,
-                  and biological soil health indicators, creating a more
-                  holistic understanding of soil systems. Ultimately, my vision
-                  is to develop cost-effective, high-throughput methods for soil
-                  health assessment.
+                  In parallel, I have been learning more about PFAS analytical
+                  approaches through the Analytical Chemistry Lab at Lincoln
+                  University of Missouri, where I am working to better
+                  understand PFAS occurrence and behavior in soils in an
+                  agroecosystem context.
+                </p>
+
+                <div className="bg-green-50 rounded-lg p-6">
+                  <h4 className="font-semibold text-green-800 mb-3">
+                    Farmer Collaboration
+                  </h4>
+                  <p className="text-gray-700">
+                    A central component of my work is collaboration with
+                    farmers. Direct engagement with growers strengthened my
+                    commitment to developing soil health and nutrient management
+                    tools that are practical, affordable, and responsive to
+                    real-world conditions. I am motivated to translate
+                    scientific insights into decision-support strategies that
+                    enhance carbon stabilization, improve nitrogen use
+                    efficiency, reduce nutrient losses, and strengthen soil
+                    resilience.
+                  </p>
+                </div>
+
+                <p className="font-semibold text-purple-700">
+                  Overall, my research vision integrates soil microbial ecology,
+                  nutrient cycling, and contaminant fate to advance practical,
+                  science-based soil management strategies that enhance
+                  agricultural resilience and environmental sustainability.
                 </p>
               </div>
             </div>
