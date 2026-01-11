@@ -44,6 +44,46 @@ const featuredHighlights = [
 
 const conferences = [
   {
+    name: "2026 Great Plains Growers Conference",
+    year: "2026",
+    location: "St. Joseph, MO",
+    type: "Poster Session",
+    description:
+      "This work was presented at the 2026 Great Plains Growers Conference, where I shared findings from a multi-year field study evaluating perennial versus annual grass–legume cover crops established in alleyways between organic vegetable production beds. The study demonstrated that integrating living cover crops into alleyways significantly improved soil health indicators related to carbon and nitrogen cycling including active carbon, β-glucosidase, mineralizable nitrogen, and β-glucosaminidase while simultaneously reducing weed seedbank pressure compared to tilled alleyways without cover crops. Results showed that both annual and perennial cover crop systems enhanced soil function without requiring land to be taken out of economic production, highlighting alleyway cover cropping as a practical, farmer-ready strategy for improving soil health and weed management in organic vegetable systems.",
+    category: "Conference",
+    presentation: "Poster",
+    achievement: undefined,
+    images: ["/image/kansas_2026_1.jpeg", "/image/kansas_2026.jpeg"],
+  },
+  {
+    name: "Soil Health Institute's 10th Anniversary Virtual Meeting",
+    year: "2025",
+    location: "Virtual",
+    type: "Poster Session",
+    description:
+      "This research evaluated soil health responses to living annual and perennial grass–legume cover crop mixtures established in alleyways between organic vegetable production beds during transition to certified organic management. Using a three-year field experiment at Lincoln University of Missouri, we assessed changes in biologically active soil carbon and nitrogen pools, including permanganate oxidizable carbon (POXC), potentially mineralizable nitrogen (PMN), short-term carbon mineralization (Cmin-24), and β-glucosidase activity relative to a pre-treatment baseline. Results showed that perennial ryegrass–white clover and sorghum–sudangrass–annual sweet clover mixtures consistently enhanced multiple soil health indicators and promoted organic matter stabilization, largely driven by greater biomass production, while tilled alleyways showed minimal improvement.",
+    category: "Conference",
+    presentation: "Poster",
+    achievement:
+      "Third place in the Soil Health Institute poster competition for 'Soil health comparison of annual versus perennial cover crops in alleyways between vegetable production beds during organic transition'",
+    images: ["/image/shi_presentation.jpg"],
+  },
+  {
+    name: "ASA-CSSA-SSSA International Annual Meeting",
+    year: "2025",
+    location: "Salt Lake City, UT, USA",
+    type: "Poster Session",
+    description:
+      "This study evaluated how integrating living annual and perennial cover crops into alleyways influences soil health in adjacent organic vegetable production rows. Using a three-year field experiment at Lincoln University of Missouri, we measured soil biological, chemical, and nutrient cycling indicators across multiple depths and distances from cover-cropped alleyways. Vegetable rows adjacent to cover-cropped alleyways showed significantly greater extracellular enzyme activities (β-glucosidase and N-acetyl-β-glucosaminidase), higher potentially mineralizable nitrogen, and improved labile carbon pools compared to tilled no-cover alleyways, with the strongest effects occurring closest to the alleyways. These results suggest a rhizosphere priming effect driven by lateral root growth and rhizodeposition from cover crops, particularly perennial ryegrass–white clover and sorghum–sudangrass mixtures. Overall, the findings demonstrate that alleyway cover cropping can enhance soil health and nutrient cycling within actively cropped vegetable fields without removing land from cash crop production.",
+    category: "Conference",
+    presentation: "Poster",
+    achievement: undefined,
+    images: [
+      "/image/salt_lake_city_2025.jpeg",
+      "/image/salt_lake_city_2025_1.jpeg",
+    ],
+  },
+  {
     name: "ASA-CSSA-SSSA International Annual Meeting",
     year: "2023",
     location: "St. Louis, MO",
