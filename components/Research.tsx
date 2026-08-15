@@ -11,6 +11,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import Highlight from "./Highlight";
 
 const researchImages = [
   {
@@ -64,7 +65,7 @@ function ResearchImageCarousel() {
           Research in Action
         </h4>
         <p className="text-sm text-gray-600">
-          Visual documentation of ongoing research work
+          Visual documentation of this research work
         </p>
       </div>
 
@@ -114,6 +115,56 @@ function ResearchImageCarousel() {
   );
 }
 
+const measurements: { name: string; description: React.ReactNode }[] = [
+  {
+    name: "Total Carbon & Nitrogen",
+    description: "Assessment of soil carbon and nitrogen pools.",
+  },
+  {
+    name: "Permanganate Oxidizable Carbon (POXC)",
+    description:
+      "Measurement of a biologically responsive soil carbon fraction.",
+  },
+  {
+    name: "Mineralizable Carbon",
+    description:
+      "Assessment of microbial decomposition and soil biological activity.",
+  },
+  {
+    name: "Potentially Mineralizable Nitrogen (PMN)",
+    description:
+      "Evaluation of the soil's biologically available nitrogen supply.",
+  },
+  {
+    name: "Extracellular Soil Enzymes",
+    description: (
+      <>
+        Measurement of enzymes involved in carbon, nitrogen, phosphorus, and
+        sulfur cycling, including{" "}
+        <Highlight>
+          β-glucosidase, N-acetyl-β-glucosaminidase, acid phosphatase, and
+          arylsulfatase
+        </Highlight>
+        .
+      </>
+    ),
+  },
+  {
+    name: "ACE Soil Protein",
+    description:
+      "Assessment of organically bound nitrogen associated with soil biological functioning.",
+  },
+  {
+    name: "PLFA Analysis",
+    description:
+      "Characterization of microbial biomass and broad microbial community composition.",
+  },
+  {
+    name: "Molecular Microbial Analysis",
+    description: "DNA extraction and microbial community characterization.",
+  },
+];
+
 const researchPhilosophy = {
   inspiration:
     "A single teaspoon of soil contains more microorganisms than the entire global human population",
@@ -140,15 +191,52 @@ export default function Research() {
           transition={{ duration: 0.8 }}
         >
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
-              Current Research Projects
+              Previous Research Experience
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Working as a Soil Technician in Dr. Hurisso's lab at Lincoln
-              University, focusing on microbial ecology and carbon and nitrogen
-              cycling dynamics in organic agricultural systems
+            <h3 className="text-2xl font-bold text-gray-800 mb-1">
+              Soil Health Research Specialist
+            </h3>
+            <p className="text-lg text-emerald-700 font-semibold">
+              Lincoln University of Missouri | 2024–2026
             </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl mb-16">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Before beginning my Ph.D. at Saint Louis University, I worked as
+                a{" "}
+                <Highlight>
+                  Soil Health Research Specialist in Dr. Tunsisa Hurisso's Soil
+                  Health Research Lab at Lincoln University of Missouri
+                </Highlight>
+                .
+              </p>
+              <p>
+                My research focused on{" "}
+                <Highlight>
+                  soil health, microbial ecology, carbon and nitrogen cycling,
+                  cover crops, organic agriculture, and climate-resilient
+                  production systems
+                </Highlight>
+                .
+              </p>
+              <p>
+                I contributed to USDA-funded research investigating how
+                conservation and agricultural management practices influence
+                soil biological functioning, nutrient cycling, weed management,
+                crop production, and agricultural resilience.
+              </p>
+            </div>
+          </div>
+
+          {/* Previous Research Projects */}
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-bold bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
+              Previous Research Projects
+            </h3>
           </div>
 
           {/* Both Projects Side by Side */}
@@ -169,14 +257,43 @@ export default function Research() {
                     1. Organic Transition Project
                   </h3>
                   <p className="text-emerald-600 font-semibold">
-                    USDA-NIFA Funded
+                    USDA-NIFA Funded Research
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4 text-gray-700 leading-relaxed">
+                <div className="bg-emerald-50 rounded-lg p-5 space-y-3">
+                  <p>
+                    This research examined the integration of living cover crops
+                    into traffic pathways between vegetable production beds
+                    during transition to certified organic management.
+                  </p>
+                  <p>
+                    The project investigated whether cover crops could improve
+                    soil health while providing additional benefits such as weed
+                    suppression and increased biological activity in intensively
+                    managed organic vegetable systems.
+                  </p>
+                  <p>
+                    My research examined changes in{" "}
+                    <Highlight>
+                      soil carbon and nitrogen pools, microbial activity,
+                      extracellular enzyme activity, microbial community
+                      composition, cover crop biomass, and weed seedbank
+                      dynamics
+                    </Highlight>
+                    .
+                  </p>
+                  <p className="font-semibold text-emerald-800">
+                    This project helped establish the foundation for my interest
+                    in understanding how agricultural management influences soil
+                    microbial processes.
+                  </p>
+                </div>
+
                 <p>
-                  In the U.S. organic agriculture is a $50 billion industry,
+                  In the U.S., organic agriculture is a $50 billion industry,
                   involving &gt;5 million certified acres of organic farmland
                   and &gt;14,000 farms. However, weed management poses one of
                   the greatest challenges to growing organic crops, accounting
@@ -186,7 +303,7 @@ export default function Research() {
                   Many growers turn to tillage to control weeds, but soil
                   disturbance associated with tillage results in soil erosion
                   and loss of valuable soil organic matter. In Missouri, where
-                  top soils are relatively shallow, the loss of carbon-rich
+                  topsoils are relatively shallow, the loss of carbon-rich
                   topsoil through tillage-induced soil disturbance is directly
                   responsible for soil quality degradation, greatly limiting
                   yield and profitability.
@@ -197,15 +314,15 @@ export default function Research() {
                   summer cover crops as they try to build up SOM and soil
                   health. The obstacles are enough to make some farmers abandon
                   organic practices altogether and others think twice before
-                  transitioning to certified organic operation.
+                  transitioning to a certified organic operation.
                 </p>
                 <p className="font-semibold text-emerald-700">
-                  Therefore, I am working to develop a more sustainable, cover
-                  crop-cash crop companion production methods that enhance soil
-                  health and crowd out weeds, ultimately improving crop yields
-                  and profitability of small- and mid-sized vegetable farms
-                  across Missouri and the Midwest. This project is supported by
-                  USDA-NIFA.
+                  Therefore, this project worked to develop more sustainable
+                  cover crop–cash crop companion production methods that enhance
+                  soil health and crowd out weeds, ultimately improving crop
+                  yields and profitability of small- and mid-sized vegetable
+                  farms across Missouri and the Midwest. This project was
+                  supported by USDA-NIFA.
                 </p>
               </div>
             </motion.div>
@@ -232,9 +349,31 @@ export default function Research() {
               </div>
 
               <div className="space-y-4 text-gray-700 leading-relaxed">
+                <div className="bg-amber-50 rounded-lg p-5 space-y-3">
+                  <p>
+                    The Solar Corridor Cropping System project evaluated an
+                    alternative cropping and winter-feeding strategy designed to
+                    improve livestock production while supporting soil health
+                    and agricultural resilience.
+                  </p>
+                  <p>
+                    The system integrates grain and forage crops to provide
+                    livestock grazing opportunities while reducing dependence on
+                    harvested feed and other production inputs.
+                  </p>
+                  <p>
+                    My role focused primarily on evaluating how the production
+                    system influenced{" "}
+                    <Highlight>
+                      soil health and carbon and nitrogen cycling
+                    </Highlight>
+                    .
+                  </p>
+                </div>
+
                 <p>
-                  The Solar Corridor Cropping System (SCCS) project is a USDA
-                  Conservation Innovation Grant funded initiative aimed at
+                  The Solar Corridor Cropping System (SCCS) project was a USDA
+                  Conservation Innovation Grant-funded initiative aimed at
                   enhancing the sustainability and productivity of livestock
                   farming by introducing a year-round grazing alternative.
                 </p>
@@ -269,8 +408,48 @@ export default function Research() {
           >
             <div className="text-center mb-12">
               <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
-                My Role
+                My Role in the Research
               </h3>
+              <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+                Across these projects, I conducted or contributed to
+                measurements and analyses including:
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+              {measurements.map((item) => (
+                <div
+                  key={item.name}
+                  className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-xl p-5 shadow-lg"
+                >
+                  <h4 className="font-bold text-gray-800 mb-2 text-sm">
+                    {item.name}
+                  </h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl mb-12">
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  I also participated in{" "}
+                  <Highlight>
+                    field sampling, cover crop biomass measurements, plant
+                    tissue analysis, weed seedbank assessments, statistical
+                    analysis, data visualization, manuscript preparation, and
+                    research outreach
+                  </Highlight>
+                  .
+                </p>
+                <p>
+                  I used <Highlight>R and SAS</Highlight> to analyze
+                  experimental data and translate research findings into
+                  biologically and agriculturally meaningful conclusions.
+                </p>
+              </div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -278,68 +457,37 @@ export default function Research() {
               <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl">
                 <div className="space-y-6 text-gray-700 leading-relaxed">
                   <p>
-                    In these projects, I carry out testing on a suite of soil
-                    health indicators that reveal how conservation practices
-                    impact soil health and resilience. These include:
+                    In this role, I carried out testing on a suite of soil health
+                    indicators that reveal how conservation practices impact
+                    soil health and resilience.
                   </p>
 
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <ol className="list-decimal list-inside space-y-1 text-sm">
-                        <li>Total carbon and total nitrogen</li>
-                        <li>Permanganate oxidizable carbon (POXC)</li>
-                        <li>Mineralizable carbon</li>
-                        <li>Potentially mineralizable nitrogen (PMN)</li>
-                      </ol>
-                    </div>
-                    <div>
-                      <ol
-                        className="list-decimal list-inside space-y-1 text-sm"
-                        start={5}
-                      >
-                        <li>
-                          Soil enzymes (e.g., β-glucosidase,
-                          N-acetyl-β-glucosaminidase)
-                        </li>
-                        <li>Soil protein</li>
-                        <li>
-                          Phospholipid fatty acids (PLFA) for microbial biomass
-                          and community composition
-                        </li>
-                        <li>
-                          DNA/RNA extraction for microbial community activity
-                          analysis
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
-
                   <p>
-                    This work provides both immediate insights into how soils
-                    respond to management and builds the foundation for
+                    This work provided both immediate insights into how soils
+                    respond to management and built the foundation for
                     understanding long-term changes that support sustainable
                     land use and organic farming practices.
                   </p>
 
                   <p>
-                    Beyond this, I also analyze cover crop and forage tissues
-                    and collect biomass samples, since the amount of carbon
+                    Beyond this, I also analyzed cover crop and forage tissues
+                    and collected biomass samples, since the amount of carbon
                     sequestered in soil is directly linked to the amount of
                     biomass returned. To assess weed management effectiveness, I
-                    study the weed seed bank to determine whether conservation
-                    practices have reduced potential weed pressure.
+                    studied the weed seed bank to determine whether conservation
+                    practices had reduced potential weed pressure.
                   </p>
 
                   <p>
-                    After generating data, I apply statistical analysis and
+                    After generating data, I applied statistical analysis and
                     visualization techniques in R and SAS, transforming raw
                     measurements into insights that guide sustainable farming
                     strategies.
                   </p>
 
                   <p className="font-semibold text-emerald-700">
-                    Through these studies, my goal is to provide farmers
-                    especially small- and mid-sized organic growers with tools
+                    Through these studies, my goal was to provide farmers —
+                    especially small- and mid-sized organic growers — with tools
                     and strategies that enhance both ecological resilience and
                     economic success.
                   </p>
@@ -362,7 +510,7 @@ export default function Research() {
           >
             <div className="text-center mb-12">
               <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Looking Ahead: Research Vision
+                Broader Research Interests &amp; PFAS Work
               </h3>
             </div>
 
@@ -447,9 +595,8 @@ export default function Research() {
                 <p>
                   In parallel, I have been learning more about PFAS analytical
                   approaches through the Analytical Chemistry Lab at Lincoln
-                  University of Missouri, where I am working to better
-                  understand PFAS occurrence and behavior in soils in an
-                  agroecosystem context.
+                  University of Missouri, working to better understand PFAS
+                  occurrence and behavior in soils in an agroecosystem context.
                 </p>
 
                 <div className="bg-green-50 rounded-lg p-6">
@@ -488,11 +635,11 @@ export default function Research() {
           >
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold mb-4">
-                Research Expertise & Focus Areas
+                Foundations Built at Lincoln University
               </h3>
               <p className="text-emerald-100 text-lg">
-                Specialized in microbial ecology, soil biogeochemical cycling,
-                and conservation practices
+                Microbial ecology, soil biogeochemical cycling, and conservation
+                practices
               </p>
             </div>
 

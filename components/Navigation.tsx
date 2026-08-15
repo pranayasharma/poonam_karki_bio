@@ -21,8 +21,10 @@ export default function Navigation({ onExperienceClick }: NavigationProps) {
   const navItems = [
     { name: "About", href: "#about" },
     //{ name: "Skills", href: "#skills" },
+    { name: "Research", href: "#research-direction" },
+    { name: "Expertise", href: "#expertise" },
+    { name: "Teaching", href: "#teaching" },
     { name: "Conferences", href: "#conferences" },
-    { name: "Research", href: "#research" },
     { name: "CV", href: "/resume/CV_PoonamKarki.pdf" },
     // { name: 'Data', href: '#data-viz' },
     // { name: 'Contact', href: '#contact' },

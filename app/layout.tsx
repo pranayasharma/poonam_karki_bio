@@ -4,8 +4,9 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Poonam Karki - Research Specialist & Data Scientist',
-  description: 'Research Specialist at Lincoln University specializing in soil health, climate-resilient agriculture, and data science.',
+  title: 'Poonam Karki - Ph.D. Student in Soil Microbial Ecology',
+  description:
+    'Ph.D. student in Biology at Saint Louis University studying soil microbial ecology, microbial nitrogen cycling, soil health, and sustainable agriculture.',
 }
 
 export default function RootLayout({
