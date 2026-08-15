@@ -20,7 +20,7 @@ const featuredHighlights = [
     type: "Award",
   },
   {
-    title: "MarbleSeed Organic Farming Conference Presenter",
+    title: "Marbleseed Organic Farming Conference Presenter",
     year: "2025",
     location: "La Crosse, WI",
     award: "🎤 Presenter",
@@ -39,6 +39,63 @@ const featuredHighlights = [
     location: "Lincoln University, MO",
     award: "🎓 Defense",
     type: "Academic",
+  },
+];
+
+const recentEngagements = [
+  {
+    name: "Relationship-Rich Pedagogy and the Teaching Effectiveness Framework",
+    year: "2026",
+    location: "St. Louis, MO",
+    type: "Professional Development",
+    description:
+      "I participated in the Relationship-Rich Pedagogy and the Teaching Effectiveness Framework program at Saint Louis University as part of my professional development in undergraduate teaching. The program helped me strengthen my approach to student engagement, effective instruction, and creating meaningful learning experiences as a Graduate Teaching Assistant.",
+    category: "Training",
+    presentation: undefined,
+    achievement: undefined,
+    images: [] as string[],
+  },
+  {
+    name: "5th International School on Non-target Metabolomics for Natural Products and Microbiome Research",
+    year: "2026",
+    location: "Denver, CO",
+    type: "Training",
+    description:
+      "I participated in the 5th International School on Non-target Metabolomics for Natural Products and Microbiome Research, where I received training in non-target metabolomics and its applications in natural products and microbiome research. During the program, I also contributed to a poster titled “Deletion of Wsp Gene Global Metabolite Production in Pseudomonas aeruginosa PA14,” expanding my exposure to metabolomics-based approaches for investigating microbial systems.",
+    category: "Training",
+    presentation:
+      "Deletion of Wsp Gene Global Metabolite Production in Pseudomonas aeruginosa PA14",
+    achievement: "Certificate of Attendance – University of Denver",
+    images: [
+      "/image/metabolomics_poster.png",
+      "/image/metabolomics_denver.jpeg",
+      "/image/metabolomics_certificate.png",
+    ],
+  },
+  {
+    name: "1890 ARD Research Symposium",
+    year: "2026",
+    location: "New Orleans, LA",
+    type: "Presenter",
+    description:
+      "At the 2026 1890 ARD Research Symposium, I presented my research on soil health comparisons between annual and perennial cover crops established in alleyways between vegetable production beds during organic transition. The symposium provided an opportunity to communicate findings from our organic vegetable production research and engage with scientists working across agriculture, natural resources, and related disciplines.",
+    category: "Conference",
+    presentation:
+      "Soil health comparison of annual versus perennial cover crops in alleyways between vegetable production beds during organic transition",
+    achievement: undefined,
+    images: ["/image/1890_ard_2026.jpeg", "/image/1890_ard_2026_1.jpeg"],
+  },
+  {
+    name: "Marbleseed Organic Farming Conference",
+    year: "2026",
+    location: "La Crosse, WI",
+    type: "Participant",
+    description:
+      "I participated in the 2026 Marbleseed Organic Farming Conference, which brought together farmers, researchers, educators, and agricultural professionals interested in organic and sustainable production systems. The conference provided valuable opportunities to engage with farmer-centered discussions on organic agriculture, soil management, and sustainable farming practices.",
+    category: "Conference",
+    presentation: undefined,
+    achievement: undefined,
+    images: ["/image/marbleseed_2026.jpeg", "/image/marbleseed_2026_1.jpeg"],
   },
 ];
 
@@ -66,7 +123,7 @@ const conferences = [
     presentation: "Poster",
     achievement:
       "Third place in the Soil Health Institute poster competition for 'Soil health comparison of annual versus perennial cover crops in alleyways between vegetable production beds during organic transition'",
-    images: ["/image/shi_presentation.jpg"],
+    images: ["/image/shi_presentation.jpg", "/image/shi_badge_2025.png"],
   },
   {
     name: "ASA-CSSA-SSSA International Annual Meeting",
@@ -108,7 +165,7 @@ const conferences = [
     images: ["/image/1890_ard_2.jpg", "/image/environment_human_sc.jpg"],
   },
   {
-    name: "MarbleSeed Organic Farming Conference",
+    name: "Marbleseed Organic Farming Conference",
     year: "2025",
     location: "La Crosse, WI",
     type: "Poster",
@@ -236,7 +293,7 @@ export default function Conferences() {
   const [viewMode, setViewMode] = useState("grid");
   const [selectedItem, setSelectedItem] = useState<any>(null);
 
-  const allEngagements = [...conferences, ...workshops];
+  const allEngagements = [...recentEngagements, ...conferences, ...workshops];
   const filteredEngagements =
     selectedCategory === "All"
       ? allEngagements
@@ -273,6 +330,13 @@ export default function Conferences() {
         return "bg-blue-100 text-blue-800";
       case "Poster Session":
         return "bg-orange-100 text-orange-800";
+      case "Professional Development":
+        return "bg-teal-100 text-teal-800";
+      case "Training":
+      case "Technical Training":
+        return "bg-indigo-100 text-indigo-800";
+      case "Participant":
+        return "bg-emerald-100 text-emerald-800";
       default:
         return "bg-gray-100 text-gray-800";
     }
@@ -287,9 +351,28 @@ export default function Conferences() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
-            Professional Engagements
-          </h2>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-gray-800">
+              Professional Engagements
+            </h2>
+            <h3 className="text-2xl font-semibold text-emerald-700 mb-6">
+              Conferences, Workshops &amp; Professional Development
+            </h3>
+            <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed">
+              <p>
+                My professional activities include participation in scientific
+                conferences, research presentations, workshops, field days,
+                farmer outreach events, technical training, and collaborative
+                research projects.
+              </p>
+              <p>
+                These experiences have allowed me to communicate research
+                findings to scientists, students, farmers, and other
+                stakeholders while continuing to develop my skills in research,
+                teaching, and scientific communication.
+              </p>
+            </div>
+          </div>
 
           {/* Featured Highlights */}
           <div className="mb-16">
@@ -395,7 +478,7 @@ export default function Conferences() {
                     </div>
                   </div>
 
-                  {/* Images */}
+                  {/* Images — preview at most two; the rest open in the modal */}
                   {item.images && item.images.length > 0 ? (
                     <div
                       className={`mb-4 ${
@@ -404,22 +487,26 @@ export default function Conferences() {
                           : "grid grid-cols-2 gap-4"
                       }`}
                     >
-                      {item.images.map((img: string, imgIndex: number) => (
-                        <div
-                          key={imgIndex}
-                          className="h-96 rounded-lg overflow-hidden"
-                        >
-                          <img
-                            src={img}
-                            alt={`${item.name} ${imgIndex + 1}`}
-                            className="w-full h-full object-cover rounded-lg"
-                          />
-                        </div>
-                      ))}
+                      {item.images
+                        .slice(0, 2)
+                        .map((img: string, imgIndex: number) => (
+                          <div
+                            key={imgIndex}
+                            className="h-96 rounded-lg overflow-hidden"
+                          >
+                            <img
+                              src={img}
+                              alt={`${item.name} ${imgIndex + 1}`}
+                              className="w-full h-full object-cover rounded-lg"
+                            />
+                          </div>
+                        ))}
                     </div>
                   ) : (
-                    <div className="w-full h-96 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                      <span className="text-gray-500">Event Image</span>
+                    <div className="mb-4 bg-white/60 rounded-lg p-6 border border-blue-100">
+                      <p className="text-gray-700 leading-relaxed line-clamp-6">
+                        {item.description}
+                      </p>
                     </div>
                   )}
 

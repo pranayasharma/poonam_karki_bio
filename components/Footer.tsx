@@ -9,10 +9,12 @@ export default function Footer() {
           {/* About */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Poonam Karki</h3>
-            <p className="text-gray-300 mb-4">
-              Soil Technician at Lincoln University, focusing on microbial
-              ecology and sustainable agricultural solutions for small- and
-              mid-scale farmers.
+            <p className="text-gray-300 mb-1">
+              Ph.D. Student in Biology, Saint Louis University
+            </p>
+            <p className="text-gray-400 mb-4 text-sm">
+              Soil Microbial Ecology | Nitrogen Cycling | Soil Health |
+              Sustainable Agriculture
             </p>
             <div className="flex space-x-4">
               <a
@@ -22,7 +24,7 @@ export default function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:karkip@lincolnu.edu"
+                href="mailto:poonam.karki@slu.edu"
                 className="text-gray-300 hover:text-blue-400 transition-colors"
               >
                 <Mail size={20} />
@@ -41,10 +43,18 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#research"
+                  href="#research-direction"
                   className="hover:text-white transition-colors"
                 >
                   Research
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#teaching"
+                  className="hover:text-white transition-colors"
+                >
+                  Teaching
                 </a>
               </li>
               <li>
@@ -71,7 +81,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300 flex items-center justify-center">
             Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by Poonam
-            Karki © 2025
+            Karki © 2026
           </p>
         </div>
       </div>
