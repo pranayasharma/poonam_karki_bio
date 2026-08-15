@@ -1,12 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Download,
+  FileText,
   Mail,
   Linkedin,
   Microscope,
   Leaf,
-  Users,
+  GraduationCap,
+  FlaskConical,
 } from "lucide-react";
 
 export default function Hero() {
@@ -37,15 +38,23 @@ export default function Hero() {
               <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
                 Poonam Karki
               </h1>
-              <p className="text-xl md:text-2xl mb-4 text-emerald-600 font-semibold">
-                Soil Technician
+              <p className="text-xl md:text-2xl mb-2 text-emerald-600 font-semibold">
+                Ph.D. Student | Soil Microbial Ecology
+              </p>
+              <p className="text-lg mb-4 text-gray-800 font-medium">
+                Saint Louis University
               </p>
               <p className="text-lg mb-2 text-gray-700 italic font-medium">
-                "Building Healthy Soils, One Study at a Time"
+                Exploring the microbial processes that regulate soil health,
+                nutrient cycling, and ecosystem function
               </p>
               <p className="text-base text-gray-600">
-                Advancing soil health research to support sustainable farming
-                and resilient food systems
+                My research bridges{" "}
+                <strong className="font-bold text-gray-800">
+                  soil science, microbial ecology, and sustainable agriculture
+                </strong>{" "}
+                to understand how microorganisms regulate nitrogen
+                transformations in agricultural ecosystems.
               </p>
             </motion.div>
 
@@ -55,16 +64,20 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-wrap gap-4 mb-8"
             >
-              <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2 shadow-lg">
-                <span className="text-2xl font-bold text-emerald-600">2</span>
-                <p className="text-sm text-gray-600">Active Projects</p>
-              </div>
-              <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2 shadow-lg">
-                <span className="text-2xl font-bold text-emerald-600">
-                  USDA
-                </span>
-                <p className="text-sm text-gray-600">Funded Research</p>
-              </div>
+              <a
+                href="#research-direction"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-colors"
+              >
+                View My Research
+              </a>
+              <a
+                href="/resume/CV_PoonamKarki.pdf"
+                target="_blank"
+                className="bg-white/70 backdrop-blur-sm border border-white/40 hover:bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg shadow-lg transition-colors flex items-center gap-2"
+              >
+                <FileText size={18} />
+                View CV
+              </a>
             </motion.div>
 
             <motion.div
@@ -80,7 +93,7 @@ export default function Hero() {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:karkip@lincolnu.edu"
+                href="mailto:poonam.karki@slu.edu"
                 className="text-emerald-600 hover:text-emerald-800 transition-colors transform hover:scale-110"
               >
                 <Mail size={24} />
@@ -88,7 +101,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Glassy Mirror Card */}
+          {/* Right Column - Quick Profile */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -105,36 +118,42 @@ export default function Hero() {
                     <Microscope className="w-8 h-8 text-emerald-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                    Research Focus
+                    Quick Profile
                   </h3>
-                  <p className="text-gray-600">
-                    Microbial ecology & soil biogeochemical cycling
-                  </p>
                 </div>
 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <Leaf className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
+                    <GraduationCap className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-800">
-                        Expertise Areas
+                        Current Position
                       </h4>
                       <p className="text-sm text-gray-600">
-                        Microbial ecology, soil biogeochemical cycling, and
-                        conservation practices
+                        Ph.D. Student &amp; Graduate Teaching Assistant, Saint
+                        Louis University
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-3">
-                    <Users className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
+                    <FlaskConical className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Mission</h4>
+                      <h4 className="font-semibold text-gray-800">
+                        Research Focus
+                      </h4>
                       <p className="text-sm text-gray-600">
-                        Advancing climate-smart agriculture by helping small and
-                        mid-scale farmers transition to organic production,
-                        improve productivity, and build resilience thorough
-                        evidence-based soild health management
+                        Soil microbial ecology &amp; nitrogen cycling
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-3">
+                    <Leaf className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800">Teaching</h4>
+                      <p className="text-sm text-gray-600">
+                        BIOL 1245 – Principles of Biology I Laboratory
                       </p>
                     </div>
                   </div>
@@ -142,11 +161,11 @@ export default function Hero() {
 
                 <div className="bg-white/40 backdrop-blur-sm rounded-lg p-4 border border-white/30">
                   <h4 className="font-semibold text-gray-800 mb-2">
-                    Current Position
+                    Research Background
                   </h4>
                   <p className="text-sm text-gray-700">
-                    Soil Technician at Lincoln University, working in Dr.
-                    Hurisso's lab focusing on organic agricultural systems
+                    USDA-funded soil health &amp; sustainable agriculture
+                    research
                   </p>
                 </div>
 
