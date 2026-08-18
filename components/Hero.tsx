@@ -158,23 +158,6 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
-
-                <div className="bg-white/40 backdrop-blur-sm rounded-lg p-4 border border-white/30">
-                  <h4 className="font-semibold text-gray-800 mb-2">
-                    Research Background
-                  </h4>
-                  <p className="text-sm text-gray-700">
-                    USDA-funded soil health &amp; sustainable agriculture
-                    research
-                  </p>
-                </div>
-
-                <div className="text-center pt-4">
-                  <p className="text-xs text-gray-500 italic">
-                    "A single teaspoon of soil contains more microorganisms than
-                    the entire global human population"
-                  </p>
-                </div>
               </div>
             </div>
           </motion.div>

@@ -108,56 +108,6 @@ function ResearchImageCarousel() {
   );
 }
 
-const measurements: { name: string; description: React.ReactNode }[] = [
-  {
-    name: "Total Carbon & Nitrogen",
-    description: "Assessment of soil carbon and nitrogen pools.",
-  },
-  {
-    name: "Permanganate Oxidizable Carbon (POXC)",
-    description:
-      "Measurement of a biologically responsive soil carbon fraction.",
-  },
-  {
-    name: "Mineralizable Carbon",
-    description:
-      "Assessment of microbial decomposition and soil biological activity.",
-  },
-  {
-    name: "Potentially Mineralizable Nitrogen (PMN)",
-    description:
-      "Evaluation of the soil's biologically available nitrogen supply.",
-  },
-  {
-    name: "Extracellular Soil Enzymes",
-    description: (
-      <>
-        Measurement of enzymes involved in carbon, nitrogen, phosphorus, and
-        sulfur cycling, including{" "}
-        <Highlight>
-          β-glucosidase, N-acetyl-β-glucosaminidase, acid phosphatase, and
-          arylsulfatase
-        </Highlight>
-        .
-      </>
-    ),
-  },
-  {
-    name: "ACE Soil Protein",
-    description:
-      "Assessment of organically bound nitrogen associated with soil biological functioning.",
-  },
-  {
-    name: "PLFA Analysis",
-    description:
-      "Characterization of microbial biomass and broad microbial community composition.",
-  },
-  {
-    name: "Molecular Microbial Analysis",
-    description: "DNA extraction and microbial community characterization.",
-  },
-];
-
 export default function Research() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -383,59 +333,13 @@ export default function Research() {
             </motion.div>
           </div>
 
-          {/* My Role Section */}
+          {/* Role description & research imagery */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mb-16"
           >
-            <div className="text-center mb-12">
-              <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
-                My Role in the Research
-              </h3>
-              <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                Across these projects, I conducted or contributed to
-                measurements and analyses including:
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-              {measurements.map((item) => (
-                <div
-                  key={item.name}
-                  className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-xl p-5 shadow-lg"
-                >
-                  <h4 className="font-bold text-gray-800 mb-2 text-sm">
-                    {item.name}
-                  </h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl mb-12">
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  I also participated in{" "}
-                  <Highlight>
-                    field sampling, cover crop biomass measurements, plant
-                    tissue analysis, weed seedbank assessments, statistical
-                    analysis, data visualization, manuscript preparation, and
-                    research outreach
-                  </Highlight>
-                  .
-                </p>
-                <p>
-                  I used <Highlight>R and SAS</Highlight> to analyze
-                  experimental data and translate research findings into
-                  biologically and agriculturally meaningful conclusions.
-                </p>
-              </div>
-            </div>
-
             <div className="grid lg:grid-cols-2 gap-8">
               {/* Role Description */}
               <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl">
