@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Atom } from "lucide-react";
-import Highlight from "./Highlight";
 
 export default function CurrentResearch() {
   const ref = useRef(null);
@@ -48,42 +47,22 @@ export default function CurrentResearch() {
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 My current research interests focus on understanding how
-                agricultural management influences{" "}
-                <Highlight>
-                  nitrogen-cycling microorganisms, functional genes, nutrient
-                  transformations, and greenhouse gas emissions
-                </Highlight>
-                .
+                agricultural management influences nitrogen-cycling
+                microorganisms, functional genes, nutrient transformations, and
+                greenhouse gas emissions. I am particularly interested in
+                microbial processes such as nitrogen fixation, mineralization,
+                nitrification, denitrification, DNRA, and other microbial
+                nitrogen transformations. My doctoral training integrates
+                approaches such as soil biogeochemical measurements, DNA
+                extraction, quantitative PCR (qPCR), amplicon sequencing,
+                greenhouse gas measurements, bioinformatics, and omics-based
+                approaches.
               </p>
 
-              <p>
-                I am particularly interested in microbial processes such as{" "}
-                <Highlight>
-                  nitrogen fixation, mineralization, nitrification,
-                  denitrification, DNRA, and other microbial nitrogen
-                  transformations
-                </Highlight>
-                .
-              </p>
-
-              <p>
-                My doctoral training integrates approaches such as{" "}
-                <Highlight>
-                  soil biogeochemical measurements, DNA extraction, quantitative
-                  PCR (qPCR), amplicon sequencing, greenhouse gas measurements,
-                  bioinformatics, and omics-based approaches
-                </Highlight>
-                .
-              </p>
-
-              <p>
+              <p className="font-semibold text-emerald-700">
                 My long-term goal is to connect changes in microbial communities
-                and functional pathways with measurable changes in{" "}
-                <Highlight>
-                  soil nitrogen availability, soil health, and ecosystem
-                  function
-                </Highlight>
-                .
+                and functional pathways with measurable changes in soil nitrogen
+                availability, soil health, and ecosystem function.
               </p>
             </div>
           </div>
